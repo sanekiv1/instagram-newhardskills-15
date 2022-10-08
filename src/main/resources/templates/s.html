@@ -47,8 +47,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#"><img src="https://st.depositphotos.com/1779253/5140/v/600/depositphotos_51405259-stock-illustration-male-avatar-profile-picture-use.jpg" alt="" width="30" height="24"></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Выход</a>
+                <li class="nav-item" >
+<!--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Выход</a>-->
+                    <a th:href="@{/user/logout}" th:text="Выход"></a>
                 </li>
 
             </ul>
