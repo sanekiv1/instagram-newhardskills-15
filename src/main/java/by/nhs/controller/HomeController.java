@@ -27,7 +27,7 @@ public class HomeController {
         return "home";
     }
 
-    @PostMapping()
+    @PostMapping("/users")
     public String home(@ModelAttribute("user") User user, HttpSession session) {
         User userFromMemory = userService.findByUsername(user.getUsername());
         if (userFromMemory != null) {

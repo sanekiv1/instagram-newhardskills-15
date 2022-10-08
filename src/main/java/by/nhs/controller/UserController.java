@@ -37,6 +37,17 @@ public class UserController {
 //        return "s";
     }
 
+    @GetMapping("/users")
+    public String s(Model model) {
+
+        return "s";
+    }
+
+
+
+
+
+
 
 
 

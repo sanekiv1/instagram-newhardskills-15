@@ -10,10 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class Controller {
 
-    @GetMapping
-    public String s(Model model) {
+//    @GetMapping
+//    public String s(Model model) {
+//
+//        return "s";
+//    }
 
-        return "s";
-    }
+
 }
 
