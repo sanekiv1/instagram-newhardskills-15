@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+        <img src="https://www.instagram.com/static/images/web/logged_out_wordmark-2x.png/d2529dbef8ed.png">
+        <br>
+    <font size="5" >
+        <p1 th:text="${'Зарегистрируйтесь, чтобы смотреть фото и видео ваших друзей.' }"></p1>
+    </font>
+    <br>
+    <br>
+
+        <form action="#" th:action="@{/user/registration}" th:method="post" th:object="${user}">
+            <font size="5" >
+            <front class="form-row">
+                <div class="col">
+                    <input th:type="text" th:field="*{username}" th:name="username" th:placeholder="Имя">
+                </div>
+                <div class="col">
+                    <input th:type="text" th:field="*{password}" th:name="password" th:placeholder="Пароль">
+                </div>
+                <div class="col">
+                    <input th:type="text" th:field="*{name}" th:name="name" th:placeholder="Имя2">
+                </div>
+                <div class="col">
+                    <input th:type="text" th:field="*{email}" th:name="email" th:placeholder="email">
+                </div>
+                <div class="col">
+                    <input th:type="text" th:field="*{address}" th:name="address" th:placeholder="Адрес">
+                </div>
+                <div class="col">
+                    <input th:type="text" th:field="*{phoneNumber}" th:name="phoneNumber" th:placeholder="Номер">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </front>
+        </form>
+
+</center>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
